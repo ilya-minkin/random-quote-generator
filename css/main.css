@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.generator__body {
+    transition: all .3s ease;
+    position: relative;
+}
+
+.generator__body input {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.quote-text-update {
+    animation: textAnim .35s forwards ease-out;
+}
+
+.quote-author-update {
+    animation: textAnim .35s forwards ease-out;
+}
+
+@media (max-width: 767.8px) {
+    .generator-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 479.8px) {
+
+    .container {
+        max-width: 320px;
+    }
+
+    .generator-container {
+        height: 80vh;
+    }
+
+    .generator__footer {
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .btn-generate {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .btn-copy {
+        width: 100%;
+    }
+
+    .generator__body {
+        height: 72%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767.8px) {
+    .container {
+        max-width: 460px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.8px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .generator-container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .generator-container {
+        width: 80%;
+    }
+}
+
+@keyframes textAnim {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
