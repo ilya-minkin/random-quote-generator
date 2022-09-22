@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Random Quotes</title>
-</head>
-<body class="h-screen flex items-center">
+  </head>
+  <body class="h-screen flex items-center">
     <div class="container mx-auto">
-        <div class="generator-container p-6 mx-auto bg-lime-50 w-6/12 h-96 shadow-md shadow-lime-200 rounded-lg">
-            <div class="generator__body h-4/5 bg-lime-200 rounded-lg flex flex-col items-center justify-between p-6">
-                <q class="quote-text w-full text-center text-2xl font-bold text-teal-800">
-                    Click "Generate Quote" to generate random quote
-                </q>
-    
-                <p class="quote-author w-full text-right text-sm font-semibold -tracking-tight">
-                    
-                </p>
-    
-                <input type="text" class="invisible opacity-0" id="input">
-            </div>
-    
-            <div class="generator__footer pt-6 flex items-center justify-between text-sm">
-                <button class="btn-generate transition-all ease-in duration-200 shadow-md hover:shadow-emerald-600 w-5/12 py-3 px-6 bg-teal-600 uppercase text-white rounded-lg font-medium h-12">
-                    Generate Quote
-                </button>
-    
-                <button class="btn-copy shadow-md hover:shadow-emerald-600 w-5/12 transition-all ease-in duration-300 py-3 px-6 rounded-lg border-2 border-teal-600 font-medium uppercase h-12 text-teal-600">
-                    Copy
-                </button>
-            </div>
+      <div
+        class="generator-container p-6 mx-auto bg-lime-50 w-6/12 h-96 shadow-md shadow-lime-200 rounded-lg"
+      >
+        <div
+          class="generator__body h-4/5 bg-lime-200 rounded-lg flex flex-col items-center justify-between p-6"
+        >
+          <q
+            class="quote-text w-full text-center text-2xl font-bold text-teal-800"
+          >
+            Click "Generate Quote" to generate random quote
+          </q>
+
+          <p
+            class="quote-author w-full text-right text-sm font-semibold -tracking-tight"
+          ></p>
+
+          <input type="text" class="invisible opacity-0" id="input" />
         </div>
+
+        <div
+          class="generator__footer pt-6 flex items-center justify-between text-sm"
+        >
+          <button
+            class="btn-generate transition-all ease-in duration-200 shadow-md hover:shadow-emerald-600 w-5/12 py-3 px-6 bg-teal-600 uppercase text-white rounded-lg font-medium h-12"
+          >
+            Generate Quote
+          </button>
+
+          <button
+            class="btn-copy shadow-md hover:shadow-emerald-600 w-5/12 transition-all ease-in duration-300 py-3 px-6 rounded-lg border-2 border-teal-600 font-medium uppercase h-12 text-teal-600"
+          >
+            Copy
+          </button>
+        </div>
+      </div>
     </div>
 
-    <script src="./js/app.js"></script>
-</body>
+    <script src="./app/app.js"></script>
+  </body>
 </html>
